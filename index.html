@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9Z98DVSLMC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9Z98DVSLMC');
+    </script>
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -41,42 +51,48 @@
 
     <script>
         const links = {
-            'uk': 'https://www.dpbolvw.net/click-101443244-15428326',      // UA (Ukrainian)
-            'id': 'https://www.jdoqocy.com/click-101443244-15428312',      // ID (Indonesian)
-            'no': 'https://www.jdoqocy.com/click-101443244-15428316',      // NO (Norwegian)
-            'pl': 'https://www.dpbolvw.net/click-101443244-15428317',      // PL (Polish)
-            'ro': 'https://www.dpbolvw.net/click-101443244-15428320',      // RO (Romanian)
-            'fi': 'https://www.jdoqocy.com/click-101443244-15428307',      // FI (Finnish)
-            'cs': 'https://www.anrdoezrs.net/click-101443244-15711387',    // CZ (Czech)
-            'th': 'https://www.jdoqocy.com/click-101443244-15428324',      // TH (Thai)
-            'pt': 'https://www.tkqlhce.com/click-101443244-15428319',      // PT-BR (Portuguese)
-            'es': 'https://www.jdoqocy.com/click-101443244-15428322',      // ES (Spanish)
-            'nl': 'https://www.tkqlhce.com/click-101443244-15428306',      // NL (Dutch)
-            'en': 'https://www.anrdoezrs.net/click-101443244-15428302',    // EN (English)
-            'sv': 'https://www.dpbolvw.net/click-101443244-15428323',      // SE (Swedish)
-            'he': 'https://www.tkqlhce.com/click-101443244-15428310',      // HE (Hebrew)
-            'tr': 'https://www.anrdoezrs.net/click-101443244-15428325',    // TR (Turkish)
-            'hr': 'https://www.anrdoezrs.net/click-101443244-15711388',    // HR (Croatian)
-            'ko': 'https://www.jdoqocy.com/click-101443244-15428315',      // KO (Korean)
-            'ja': 'https://www.kqzyfj.com/click-101443244-15428314',       // JA (Japanese)
-            'hu': 'https://www.anrdoezrs.net/click-101443244-15428311',    // HU (Hungarian)
-            'ar': 'https://www.dpbolvw.net/click-101443244-15428303',      // AR (Arabic)
-            'zh': 'https://www.kqzyfj.com/click-101443244-15428304',       // ZH (Chinese)
-            'de': 'https://www.anrdoezrs.net/click-101443244-15428309',    // DE (German)
-            'ru': 'https://www.tkqlhce.com/click-101443244-15428321',      // RU (Russian)
-            'fr': 'https://www.dpbolvw.net/click-101443244-15428308',      // FR (French)
-            'da': 'https://www.dpbolvw.net/click-101443244-15428305',      // DA (Danish)
-            'it': 'https://www.anrdoezrs.net/click-101443244-15428313'     // IT (Italian)
+            'uk': 'https://www.dpbolvw.net/click-101443244-15428326',
+            'id': 'https://www.jdoqocy.com/click-101443244-15428312',
+            'no': 'https://www.jdoqocy.com/click-101443244-15428316',
+            'pl': 'https://www.dpbolvw.net/click-101443244-15428317',
+            'ro': 'https://www.dpbolvw.net/click-101443244-15428320',
+            'fi': 'https://www.jdoqocy.com/click-101443244-15428307',
+            'cs': 'https://www.anrdoezrs.net/click-101443244-15711387',
+            'th': 'https://www.jdoqocy.com/click-101443244-15428324',
+            'pt': 'https://www.tkqlhce.com/click-101443244-15428319',
+            'es': 'https://www.jdoqocy.com/click-101443244-15428322',
+            'nl': 'https://www.tkqlhce.com/click-101443244-15428306',
+            'en': 'https://www.anrdoezrs.net/click-101443244-15428302',
+            'sv': 'https://www.dpbolvw.net/click-101443244-15428323',
+            'he': 'https://www.tkqlhce.com/click-101443244-15428310',
+            'tr': 'https://www.anrdoezrs.net/click-101443244-15428325',
+            'hr': 'https://www.anrdoezrs.net/click-101443244-15711388',
+            'ko': 'https://www.jdoqocy.com/click-101443244-15428315',
+            'ja': 'https://www.kqzyfj.com/click-101443244-15428314',
+            'hu': 'https://www.anrdoezrs.net/click-101443244-15428311',
+            'ar': 'https://www.dpbolvw.net/click-101443244-15428303',
+            'zh': 'https://www.kqzyfj.com/click-101443244-15428304',
+            'de': 'https://www.anrdoezrs.net/click-101443244-15428309',
+            'ru': 'https://www.tkqlhce.com/click-101443244-15428321',
+            'fr': 'https://www.dpbolvw.net/click-101443244-15428308',
+            'da': 'https://www.dpbolvw.net/click-101443244-15428305',
+            'it': 'https://www.anrdoezrs.net/click-101443244-15428313'
         };
 
         // Detecta o idioma do navegador
         const userLang = navigator.language.toLowerCase().substring(0, 2);
-        
-        // Redireciona para o link correspondente, ou para inglês como padrão
         const redirectUrl = links[userLang] || links['en'];
         
-        // Redireciona imediatamente
-        window.location.href = redirectUrl;
+        // Envia evento para Google Analytics antes de redirecionar
+        gtag('event', 'redirect', {
+            'language': userLang,
+            'destination': redirectUrl
+        });
+        
+        // Aguarda 500ms para garantir que o Analytics registrou, depois redireciona
+        setTimeout(function() {
+            window.location.href = redirectUrl;
+        }, 500);
     </script>
 </body>
 </html>
